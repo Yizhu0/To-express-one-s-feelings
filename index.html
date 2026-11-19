@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dear P'may</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="card">
+    <svg class="mascot" id="mascot" viewBox="0 0 200 200" aria-hidden="true">
+      <g class="earL"><ellipse cx="46" cy="92" rx="26" ry="50" fill="#fff" stroke="#cfe6f7" stroke-width="3" transform="rotate(14 46 92)"/><ellipse cx="46" cy="98" rx="12" ry="30" fill="#ffd3e3" transform="rotate(14 46 98)"/></g>
+      <g class="earR"><ellipse cx="154" cy="92" rx="26" ry="50" fill="#fff" stroke="#cfe6f7" stroke-width="3" transform="rotate(-14 154 92)"/><ellipse cx="154" cy="98" rx="12" ry="30" fill="#ffd3e3" transform="rotate(-14 154 98)"/></g>
+      <ellipse cx="100" cy="112" rx="64" ry="56" fill="#fff" stroke="#cfe6f7" stroke-width="3"/>
+      <path d="M92 58c4-14 22-14 22-2 0 10-14 10-14 2" fill="none" stroke="#9fd3f7" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="60" cy="126" rx="11" ry="7" fill="#ffb3cf" opacity=".8"/><ellipse cx="140" cy="126" rx="11" ry="7" fill="#ffb3cf" opacity=".8"/>
+      <ellipse cx="100" cy="120" rx="5" ry="3.5" fill="#4a5a78"/>
+      <!-- normal -->
+      <g class="v-norm"><g class="blink"><circle cx="76" cy="108" r="7" fill="#4a5a78"/><circle cx="124" cy="108" r="7" fill="#4a5a78"/></g>
+        <circle cx="78" cy="105" r="2.4" fill="#fff"/><circle cx="126" cy="105" r="2.4" fill="#fff"/>
+        <path d="M94 130q6 6 12 0" fill="none" stroke="#4a5a78" stroke-width="3" stroke-linecap="round"/></g>
+      <!-- happy -->
+      <g class="v-happy"><path d="M66 110q10-13 20 0M114 110q10-13 20 0" fill="none" stroke="#4a5a78" stroke-width="4" stroke-linecap="round"/>
+        <path d="M90 128q10 14 20 0z" fill="#ff8fb8" stroke="#4a5a78" stroke-width="3" stroke-linejoin="round"/></g>
+      <!-- sad -->
+      <g class="v-calm"><path d="M66 112q10 10 20 0M114 112q10 10 20 0" fill="none" stroke="#4a5a78" stroke-width="4" stroke-linecap="round"/>
+        <path d="M92 130q8 7 16 0" fill="none" stroke="#4a5a78" stroke-width="3" stroke-linecap="round"/></g>
+    </svg>
+
+    <section class="stage on" id="s0">
+      <h1>เค้ามีอะไร<br>อยากบอกจิ๋วนะ 💌</h1>
+      <p>ขอเวลาไม่กี่นาที<br>อ่านให้จบนะ</p>
+      <div class="btns"><button class="pulse" id="open">เปิดอ่าน ☁️</button></div>
+    </section>
+
+    <section class="stage" id="s1">
+      <div class="dots" id="dots"></div>
+      <div class="msg" id="msg"></div>
+      <button class="alt" id="next">ต่อไป →</button>
+    </section>
+
+    <section class="stage" id="s2">
+      <h1>เราสองคนกลับมา<br>เริ่มต้นใหม่ด้วยกัน<br>ได้ไหม? 🤍</h1>
+      <p>ให้โอกาสเค้าอีกสักครั้งนะ<br>แมวจิ๋วคิดยังไง บอกเค้าได้เลย</p>
+      <div class="btns"><button id="yes">โอเค 💖</button><button class="alt" id="no">ไม่เอาแล้ว</button></div>
+    </section>
+
+    <section class="stage" id="s3">
+      <h1>ขอบคุณที่ให้โอกาสนะ 🥹</h1>
+      <p class="msg" style="min-height:0;margin:8px 0">เค้าจะทำให้ดีที่สุดเลย<br>จะเรียนรู้จากสิ่งที่พลาดไป<br>และจะดูแลจิ๋วให้ดีกว่าเดิมนะ 🤍</p>
+      <p class="small">แคปหน้านี้ส่งมาบอกเค้าหน่อยน้า 📸</p>
+    </section>
+
+    <section class="stage" id="s4">
+      <h1>เข้าใจนะ ไม่เป็นไรเลย 🤍</h1>
+      <p class="msg" style="min-height:0;margin:8px 0">ขอบคุณที่ตั้งใจอ่านจนจบ<br>และขอบคุณที่ตอบตามความรู้สึกจริงๆ<br>เค้าเคารพสิ่งที่จิ๋วเลือกนะ<br>ขอให้แมวจิ๋วมีความสุขมากๆ ดูแลตัวเองด้วยนะ ☁️</p>
+      <button class="link" id="back">เผลอกดผิดหรือเปล่า? กลับไปเลือกใหม่</button>
+    </section>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
